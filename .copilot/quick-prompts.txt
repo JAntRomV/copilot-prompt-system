@@ -1,0 +1,147 @@
+╔════════════════════════════════════════════════════════════════╗
+║     PROMPTS RÁPIDOS PARA GITHUB COPILOT - COPIAR Y PEGAR      ║
+╚════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🟢 PROMPT 1: EJECUTAR TODO AUTOMÁTICAMENTE (RECOMENDADO)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+@copilot Eres experto en Node.js, Express, CI/CD, Travis CI y GitHub Actions.
+
+Lee estos archivos en ORDEN EXACTO:
+1. .copilot/setup-environment.md
+2. .copilot/github-config.md
+3. .copilot/test-requirements.md
+4. .copilot/ci-cd-config.md
+
+Para CADA archivo:
+- Lee toda la sección completamente
+- Crea TODOS los archivos especificados en las ubicaciones exactas
+- Proporciona el contenido completo entre los bloques de código
+- DESPUÉS de completar un archivo, muestra: "✅ [NOMBRE] COMPLETADO"
+
+Cuando termines TODAS las fases, muestra:
+- Lista completa de todos los archivos creados
+- Resumen de configuraciones
+- Próximos pasos
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🟠 PROMPT 2: SOLO FASE 1 (ENTORNO BASE)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+@copilot Lee .copilot/setup-environment.md completamente 
+y crea TODOS los archivos y carpetas especificadas.
+Confirma cada archivo creado.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🟡 PROMPT 3: SOLO FASE 2 (GITHUB CONFIG)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+@copilot Lee .copilot/github-config.md completamente 
+y crea TODOS los archivos de configuración especificados.
+Confirma cada archivo creado.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔵 PROMPT 4: SOLO FASE 3 (TESTS Y REQUISITOS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+@copilot Lee .copilot/test-requirements.md completamente 
+y crea TODOS los archivos de requisitos y pruebas especificados.
+Confirma cada archivo creado.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🟣 PROMPT 5: SOLO FASE 4 (CI/CD Y DOCS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+@copilot Lee .copilot/ci-cd-config.md completamente 
+y crea TODOS los archivos CI/CD y documentación especificados.
+Confirma cada archivo creado.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📝 PROMPT 6: CREAR UN ARCHIVO ESPECÍFICO
+━━━━━━━━━━━━��━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+@copilot Crea el archivo [RUTA_ARCHIVO] con el contenido especificado 
+en .copilot/[ARCHIVO_REFERENCIA].md en la sección [NOMBRE_ACCIÓN].
+
+Ejemplo:
+@copilot Crea el archivo .travis.yml con el contenido especificado 
+en .copilot/github-config.md en la sección ACCIÓN 4.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🧪 PROMPT 7: EJECUTAR VALIDACIÓN COMPLETA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+@copilot Ejecuta estos comandos en orden:
+1. npm install
+2. npm test
+3. npm run lint
+4. npm run format
+
+Reporta si todo pasó o si hay errores.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📦 PROMPT 8: CREAR NUEVO ENDPOINT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+@copilot Agrega un nuevo endpoint a src/app.js:
+- Ruta: [RUTA]
+- Método: [GET|POST|PUT|DELETE]
+- Funcionalidad: [DESCRIPCIÓN]
+- Respuesta: [FORMATO_JSON]
+
+Sigue el patrón del código existente en src/app.js.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🧬 PROMPT 9: CREAR TEST PARA FUNCIÓN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+@copilot Crea tests en tests/[NOMBRE].test.js para la función [NOMBRE_FUNCIÓN] 
+en src/[ARCHIVO].js. Asegura cobertura >= 80%. Sigue el patrón de jest 
+usado en tests/app.test.js.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔧 PROMPT 10: AYUDA EN DEBUGGING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+@copilot El archivo [ARCHIVO] tiene un error:
+[DESCRIPCIÓN DEL ERROR]
+
+Lee .copilot/[ARCHIVO_REFERENCIA].md y corrígelo según especificaciones.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 INSTRUCCIONES DE USO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Selecciona el prompt que necesitas
+2. Cópialo completamente
+3. Abre GitHub Copilot (Cmd+Shift+I en Mac, Ctrl+Shift+I en Windows)
+4. Pégalo en el chat
+5. Reemplaza [VARIABLES] con valores reales
+6. Presiona Enter
+7. Espera a que Copilot complete la tarea
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ EJEMPLOS DE USO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Crear endpoint:
+@copilot Agrega un nuevo endpoint a src/app.js:
+- Ruta: /api/users
+- Método: GET
+- Funcionalidad: Retornar lista de usuarios
+- Respuesta: { "users": [], "total": 0 }
+
+Crear test:
+@copilot Crea tests en tests/users.test.js para la función getUsers 
+en src/app.js. Asegura cobertura >= 80%.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 RECOMENDACIÓN:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Empieza con el PROMPT 1 (Ejecución Automática).
+Si necesitas revisar cada paso, usa PROMPT 2, 3, 4, 5 secuencialmente.
+Después usa los prompts específicos para agregar más funcionalidad.
+
+╚════════════════════════════════════════════════════════════════╝
